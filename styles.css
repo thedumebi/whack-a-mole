@@ -1,0 +1,35 @@
+body {
+  background-color: khaki;
+  text-align: center;
+}
+
+.square {
+  width: 200px;
+  height: 200px;
+  border: solid black;
+  border-radius: 100%;
+  background-color: white;
+}
+
+.grid {
+  display: inline-flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  width: 618px;
+  height: 618px;
+}
+
+.mole {
+  background-image: url(mole.jpg);
+  background-size: cover;
+}
+
+.selected {
+  box-shadow: 0 0 30px red;
+}
+
+button {
+  display: block;
+  text-align: center;
+}
