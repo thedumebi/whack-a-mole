@@ -11,12 +11,12 @@ function randomSquare() {
   square.forEach((className) => {
     className.classList.remove("mole");
   });
-  let randomPosition = square[Math.floor(Math.random() * 9)];
-  randomPosition.classList.add("mole");
-  squareAnimate(randomPosition);
+  let randomSquare = square[Math.floor(Math.random() * 9)];
+  randomSquare.classList.add("mole");
+  squareAnimate(randomSquare);
 
-  // assign the id of randomPosition to hitPosition
-  hitPosition = randomPosition.id;
+  // assign the id of randomSquare to hitPosition
+  hitPosition = randomSquare.id;
 }
 
 function squareAnimate(square) {
