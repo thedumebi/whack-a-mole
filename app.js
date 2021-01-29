@@ -27,7 +27,7 @@ function squareAnimate(square) {
 }
 
 square.forEach((square) => {
-  square.addEventListener("mouseup", () => {
+  square.addEventListener("click", () => {
     if (square.id === hitPosition) {
       result = result + 1;
       score.textContent = result;
@@ -57,7 +57,7 @@ button.addEventListener("click", () => {
   start = true;
 });
 
-function play(timerId) {
+function play() {
     result = 0
     score.textContent = result;
   this.timerId = setInterval(() => {
