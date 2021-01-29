@@ -35,11 +35,6 @@ square.forEach((square) => {
   });
 });
 
-function moveMole() {
-  let timerId = null;
-  timerId = setInterval(randomSquare, 1000);
-}
-
 function countDown() {
   randomSquare();
   currentTime--;
@@ -69,9 +64,9 @@ function play(timerId) {
     countDown();
     if (currentTime === 0) {
       clearInterval(this.timerId);
-      timeLeft.textContent = 60;
+      timeLeft.textContent = 30;
       currentTime = timeLeft.textContent;
       start = false
     }
-  }, 100);
+  }, 1000);
 }
